@@ -135,14 +135,19 @@ text-align: center;
 
 /***************************images************************************/
 /***********************media query**********************/
-@media (max-width: 1024px) {
+@media all and (max-width: 1024px) {
 
-#title {
+.container {
+  /* height: 100%;
+  width: 100%; */
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-auto-columns: 50%; */
+  /* grid-template-columns: auto auto; */
+  /* grid-column-gap: 70px; */
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
-  .title-image {
-    position: static;
-    transform: none;
-  }
 }
